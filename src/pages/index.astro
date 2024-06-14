@@ -1,0 +1,28 @@
+---
+import Layout from '@/layouts/Layout.astro'
+
+import Home from './_sections/Home.astro'
+import WhyUs from './_sections/WhyUs.astro'
+import Footer from './_sections/Footer.astro'
+import Featured from './_sections/Featured.astro'
+import Features from './_sections/Features.astro'
+import CallToAction from './_sections/CallToAction.astro'
+---
+
+<Layout>
+  <Home />
+
+  <h2 class="my-16 text-center text-2xl font-semibold sm:text-3xl lg:text-4xl xl:text-5xl">
+    Hacemos que tu vida sea <em class="font-bold not-italic leading-none text-primary">más sencilla</em> que nunca
+  </h2>
+
+  <Featured />
+
+  <Features />
+
+  <CallToAction />
+
+  <WhyUs />
+
+  <Footer />
+</Layout>

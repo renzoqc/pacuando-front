@@ -1,0 +1,104 @@
+{
+  "sections": [
+    {
+      "title": "personalizable",
+      "icon": "paintbrush",
+      "features": [
+        {
+          "title": "Link Personalizado",
+          "content": "Crea un enlace único y personalizado para compartir con tus contactos, facilitando la programación de reuniones virtuales"
+        },
+        {
+          "title": "Redireccionar a tu página web",
+          "content": "Dirige a los visitantes a tu propia página web, donde pueden encontrar información adicional sobre tus servicios y reservar reuniones directamente desde allí"
+        },
+        {
+          "title": "Branding Personalizado",
+          "content": "Personaliza la apariencia de tu página de reservas con tu logotipo y colores corporativos, brindando una experiencia de marca coherente y profesional"
+        },
+        {
+          "title": "Sincronización de Calendario Personal",
+          "content": "Sincroniza automáticamente tu calendario personal para evitar conflictos de horarios y asegurar una gestión eficiente de tus compromisos"
+        }
+      ],
+      "image": {
+        "alt": "Personalizable",
+        "src": "/images/videollamada-grupal.png"
+      }
+    },
+    {
+      "title": "configurable",
+      "icon": "tools",
+      "features": [
+        {
+          "title": "Configuración de horarios a nivel de servicio",
+          "content": "Establece diferentes horarios y disponibilidades para cada tipo de servicio que ofrezcas, adaptándote a las necesidades y restricciones específicas"
+        },
+        {
+          "title": "Diferenciar el tipo de reunión: Física, Virtual o Telefónica",
+          "content": "Permite a los participantes seleccionar el tipo de reunión deseada al reservar, ya sea presencial, virtual o telefónica, para una mejor organización y preparación"
+        },
+        {
+          "title": "Generación de link videollamada automático: Meet o Zoom",
+          "content": "Genera automáticamente un enlace de videollamada compatible con plataformas populares como Google Meet o Zoom, simplificando la conexión virtual con los participantes de la reunión"
+        },
+        {
+          "title": "Servicios ilimitados: individuales y talleres",
+          "content": " Ofrece una amplia gama de servicios ilimitados, tanto para reuniones individuales como para talleres grupales, brindando flexibilidad y adaptabilidad a los participantes"
+        }
+      ],
+      "image": {
+        "alt": "Configurable",
+        "src": "/images/configurable.png"
+      }
+    },
+    {
+      "title": "alertas",
+      "icon": "bell",
+      "features": [
+        {
+          "title": "Recordatorios automáticos por correo electrónico",
+          "content": "Mantén a tus participantes informados con recordatorios automáticos enviados por correo electrónico, asegurando que no se pierdan ninguna reunión importante"
+        },
+        {
+          "title": "Recordatorios para servicios individuales",
+          "content": "Configura recordatorios personalizados para servicios individuales, garantizando que los participantes recuerden sus citas y estén preparados para la reunión"
+        },
+        {
+          "title": "Generación de link videollamada automático: Meet o Zoom",
+          "content": "Genera fácilmente enlaces de videollamada automáticos para plataformas populares como Google Meet o Zoom, simplificando la conexión virtual con tus participantes"
+        },
+        {
+          "title": "Servicios ilimitados: individuales y talleres",
+          "content": "Ofrece una variedad de servicios ilimitados, tanto para reuniones individuales como para talleres, brindando flexibilidad y opciones a los participantes"
+        }
+      ],
+      "image": {
+        "alt": "Videollamadas",
+        "src": "/images/videollamada.png"
+      }
+    },
+    {
+      "title": "reportes",
+      "icon": "graphic",
+      "features": [
+        {
+          "title": "Reporte semanal y mensual de reuniones",
+          "content": "Obtén informes detallados de tus reuniones semanales y mensuales, proporcionando una visión general de tu agenda y actividades"
+        },
+        {
+          "title": "Reporte y performance de todos tus colaboradores",
+          "content": "Accede a reportes y evalúa el desempeño de todos tus colaboradores, ayudándote a gestionar eficientemente tu equipo y optimizar los resultados"
+        },
+        {
+          "title": "Valoración de todos  tus colaboradores",
+          "content": "Evalúa y valora a todos tus colaboradores, permitiéndote reconocer y recompensar su rendimiento y contribución en las reuniones y citas"
+        }
+      ],
+      "image": {
+        "alt": "Reportes estadísticos",
+        "src": "/images/graficos-estadisticos.png"
+      }
+    }
+  ]
+}

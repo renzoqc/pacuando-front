@@ -1,0 +1,18 @@
+---
+import Icon from '@/components/Icon.astro'
+
+export interface Props {
+  title?: string
+  content?: string
+}
+
+const { title, content } = Astro.props
+---
+
+<article class="grid grid-cols-[fit-content(100%)_auto] gap-2">
+  <Icon name="circle-check" width="18" class="pt-[6px] text-blue lg:pt-2" />
+  <div>
+    <h4 class="text-xl font-semibold lg:text-2xl">{title}</h4>
+    <p class="text-gray">{content}</p>
+  </div>
+</article>

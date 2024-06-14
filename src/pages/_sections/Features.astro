@@ -1,0 +1,94 @@
+---
+import Container from '@/components/Container.astro'
+import Icon from '@/components/Icon.astro'
+
+import features from '@/data/features.json'
+---
+
+<script>
+  const buttons = document.querySelectorAll('#features button')
+  const sections = document.querySelectorAll('#features section')
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      button.classList.remove('border-transparent')
+      button.classList.add('border-primary')
+      button.classList.add('text-primary')
+
+      buttons.forEach((btn) => {
+        if (btn.id !== button.id) {
+          btn.classList.remove('text-primary')
+          btn.classList.remove('border-primary')
+          btn.classList.add('border-transparent')
+        }
+      })
+
+      sections.forEach((section) => {
+        if (section.id === button.id.split('-')[1]) {
+          section.classList.remove('hidden')
+          section.classList.add('grid')
+        } else {
+          section.classList.remove('grid')
+          section.classList.add('hidden')
+        }
+      })
+    })
+  })
+</script>
+
+<Container id="features" class="my-10 flex flex-col gap-4 px-6 md:gap-8 lg:gap-12">
+  <h3 class="text-center text-2xl font-semibold sm:text-3xl lg:text-5xl xl:text-6xl">
+    Hacemos que la programación sea más sencilla que nunca
+  </h3>
+
+  <div class="flex flex-col gap-y-8">
+    <ul class="flex flex-wrap justify-center gap-x-4 md:grid md:grid-cols-4 md:gap-x-0">
+      {
+        features.sections.map(({ title, icon }, index) => (
+          <li class="font-semibold text-gray">
+            <button
+              id={`btn-${title}`}
+              class:list={[
+                'flex w-full justify-center gap-x-3 border-b-2 py-4',
+                { 'border-primary text-primary': !index },
+                { 'border-transparent': index },
+              ]}
+            >
+              <Icon name={icon} height="26" />
+              <span class="capitalize">{title}</span>
+            </button>
+          </li>
+        ))
+      }
+    </ul>
+
+    {
+      features.sections.map(({ features, image, title }, index) => (
+        <section
+          id={title}
+          class:list={[
+            'mx-auto items-center gap-x-5 gap-y-8 lg:max-w-none lg:grid-cols-[1fr_1.25fr]',
+            { grid: !index },
+            { hidden: Boolean(index) },
+          ]}
+        >
+          <div>
+            <article class="grid grid-cols-[fit-content(100%)_auto] gap-2">
+              <div class="flex flex-col gap-y-5">
+                {features.map(({ title, content }) => (
+                  <div>
+                    <h4 class="text-lg font-semibold lg:text-xl">{title}</h4>
+                    <p class="text-sm text-gray lg:text-base">{content}</p>
+                  </div>
+                ))}
+              </div>
+            </article>
+          </div>
+          <article>
+            <img {...image} class="mx-auto md:max-w-xl" />
+          </article>
+        </section>
+      ))
+    }
+  </div>
+</Container>

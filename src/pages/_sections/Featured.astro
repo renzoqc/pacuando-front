@@ -1,0 +1,24 @@
+---
+import Container from '@/components/Container.astro'
+import Feature from '@/components/Feature.astro'
+
+import featured from '@/data/featured.json'
+---
+
+<Container id="featured" class="my-10 flex flex-col gap-4 px-6 md:gap-8 lg:gap-12">
+  <h3 class="text-center text-2xl font-semibold sm:text-3xl lg:text-5xl xl:text-6xl">
+    Funciones especiales para equipos que organizan reuniones a escala
+  </h3>
+
+  <div class="lg:flex lg:flex-row">
+    <div class="mx-auto grid max-w-lg gap-y-5 lg:mx-0">
+      {featured.features.map(({ title, content }) => <Feature title={title} content={content} />)}
+    </div>
+    <article class="mx-auto lg:max-w-none">
+      <img
+        alt="Funciones especiales para equipos que organizan reuniones a escala"
+        src="/images/perfil-calendario.png"
+      />
+    </article>
+  </div>
+</Container>

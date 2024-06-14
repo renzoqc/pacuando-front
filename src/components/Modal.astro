@@ -1,0 +1,28 @@
+<script>
+  const $modal: HTMLDivElement | null = document.querySelector('#modal')
+  const $actionButtons: NodeListOf<HTMLButtonElement> = document.querySelectorAll('[data-action=inscription]')
+
+  $actionButtons.forEach((actionBtn) => {
+    actionBtn.addEventListener('click', () => {
+      if (!$modal) return
+      $modal.classList.remove('hidden')
+      $modal.classList.add('grid')
+    })
+  })
+
+  if ($modal) {
+    $modal.addEventListener('click', (event) => {
+      if ((event.target as HTMLDivElement)?.id === 'modal') {
+        $modal.classList.remove('grid')
+        $modal.classList.add('hidden')
+      }
+    })
+  }
+</script>
+
+<div
+  id="modal"
+  class="fixed top-0 z-40 hidden h-screen w-full place-items-center bg-[rgba(157,154,154,0.7)] text-white"
+>
+  <slot />
+</div>

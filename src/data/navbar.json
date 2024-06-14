@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "title": "Inicio",
+      "link": "#home"
+    },
+    {
+      "title": "Beneficios",
+      "link": "#featured"
+    },
+    {
+      "title": "Productos",
+      "link": "#features"
+    }
+  ]
+}

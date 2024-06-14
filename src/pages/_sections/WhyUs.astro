@@ -1,0 +1,22 @@
+---
+import Feature from '@/components/Feature.astro'
+import Container from '@/components/Container.astro'
+
+import whyUs from '@/data/why_us.json'
+---
+
+<Container id="why-us" class="my-10 flex flex-col gap-4 px-6 md:gap-8 lg:gap-12">
+  <div class="lg:flex lg:flex-row">
+    <div class="flex flex-col gap-y-8 lg:gap-y-11">
+      <h3 class="text-center text-2xl font-semibold sm:text-3xl lg:text-left lg:text-5xl xl:text-[3.5rem]">
+        ¿Por qué elegirnos?
+      </h3>
+      <div class="mx-auto grid max-w-lg gap-y-5 lg:mx-0">
+        {whyUs.why_us.map(({ title, content }) => <Feature title={title} content={content} />)}
+      </div>
+    </div>
+    <article class="mx-auto lg:max-w-none">
+      <img alt="Funciones especiales para equipos que organizan reuniones a escala" src="/images/crear-reunion.png" />
+    </article>
+  </div>
+</Container>

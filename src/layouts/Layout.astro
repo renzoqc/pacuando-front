@@ -1,0 +1,59 @@
+---
+import SEO from '@/components/SEO.astro'
+import Modal from '@/components/Modal.astro'
+import Navbar from '@/components/Navbar.astro'
+import Inscription from '@/components/Inscription.svelte'
+
+export interface Props {
+  title?: string
+  description?: string
+}
+
+const {
+  title = 'PaCuando',
+  description = '¡Empieza a optimizar tu tiempo hoy mismo! Regístrate gratis y descubre cómo nuestra plataforma revolucionará la forma en que gestionas tus reuniones y citas.',
+} = Astro.props
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <SEO {title} {description} />
+
+    <style>
+      @font-face {
+        font-family: 'Titillium Web';
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+        src: url('/fonts/titillium-web-400.woff2') format('woff2'), url('/fonts/titillium-web-400.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'Titillium Web';
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+        src: url('/fonts/titillium-web-600.woff2') format('woff2'), url('/fonts/titillium-web-600.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'Titillium Web';
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+        src: url('/fonts/titillium-web-700.woff2') format('woff2'), url('/fonts/titillium-web-700.woff') format('woff');
+      }
+    </style>
+  </head>
+
+  <body class="relative min-h-screen bg-light-blue font-titillium text-black">
+    <Modal>
+      <Inscription client:idle />
+    </Modal>
+    <Navbar />
+    <slot />
+  </body>
+</html>

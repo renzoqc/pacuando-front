@@ -1,0 +1,26 @@
+---
+import Button from '@/components/Button.astro'
+import Container from '@/components/Container.astro'
+---
+
+<footer class="bg-[#FAFAFB] py-20">
+  <Container tag="div" class="px-6">
+    <section
+      class="flex flex-col gap-y-8 pb-14 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left"
+    >
+      <p class="max-w-xs text-[2rem] font-bold">Aumenta tu 💪 productividad</p>
+      <div>
+        <Button primary data-action="inscription" class="w-full">¡Regístrate ahora!</Button>
+      </div>
+    </section>
+
+    <hr class="h-px w-full pt-14 text-[#E4E4E7]" />
+
+    <section>
+      <h4 class="font-bold text-primary">PaCuando</h4>
+      <p class="max-w-xs">
+        Programa, reserva y conquista tu agenda. Simplifica tus reuniones y citas con nuestra solución inteligente.
+      </p>
+    </section>
+  </Container>
+</footer>

@@ -1,0 +1,15 @@
+---
+import type { HTMLTag } from 'astro/types'
+
+export interface Props {
+  id?: string
+  tag?: HTMLTag
+  class?: string
+}
+
+const { id, class: extraClass, tag: CustomTag = 'section' } = Astro.props
+---
+
+<CustomTag id={id} class:list={['mx-auto max-w-7xl', extraClass]}>
+  <slot />
+</CustomTag>

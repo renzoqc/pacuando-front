@@ -1,0 +1,28 @@
+---
+import Icon from '@/components/Icon.astro'
+import Button from '@/components/Button.astro'
+import Container from '@/components/Container.astro'
+
+import navbar from '@/data/navbar.json'
+---
+
+<header class="mb-10 bg-white px-6 py-4">
+  <Container tag="section" class="flex items-center justify-between">
+    <Icon name="brand/isotype" width="56" class="md:hidden" />
+    <Icon name="brand/imagotype" width="228" class="hidden md:block" />
+    <nav>
+      <ul class="flex items-center gap-x-4 sm:gap-x-8">
+        {
+          navbar.items.map(({ title, link }) => (
+            <li>
+              <a href={link}>{title}</a>
+            </li>
+          ))
+        }
+        <li class="hidden md:block">
+          <Button primary data-action="inscription">¡Regístrate ahora!</Button>
+        </li>
+      </ul>
+    </nav>
+  </Container>
+</header>

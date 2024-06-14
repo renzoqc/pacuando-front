@@ -1,0 +1,27 @@
+---
+import Button from '@/components/Button.astro'
+import Container from '@/components/Container.astro'
+---
+
+<Container id="home" class="flex flex-col gap-4 px-6 sm:gap-8 lg:flex-row lg:items-center">
+  <article class="flex flex-col gap-2 sm:gap-3">
+    <div>
+      <span class="block leading-none lg:text-xl">Simplifica tus Reuniones</span>
+      <h1 class="text-4xl font-bold leading-none lg:text-[4rem]">
+        Coordina Reuniones <em class="not-italic leading-none text-primary lg:block">Sin Esfuerzo</em>
+      </h1>
+    </div>
+    <p class="max-w-2xl text-gray lg:text-xl">
+      Simplifica tu proceso de programación de reuniones con nuestra herramienta de agendamiento fácil de usar. Con solo
+      unos pocos clics, puedes enviar un enlace de agendamientopersonalizado a tus contactos, lo que les permitirá
+      elegir la fecha y hora que mejor les convenga.
+    </p>
+    <div class="flex gap-4">
+      <Button data-action="inscription" primary>¡Regístrate ahora!</Button>
+      <Button>Ver Beneficios</Button>
+    </div>
+  </article>
+  <article class="mx-auto max-w-sm lg:max-w-none">
+    <img alt="Coordina reuniones sin esfuerzo" src="/images/reuniones-sin-esfuerzo.png" width="512" />
+  </article>
+</Container>

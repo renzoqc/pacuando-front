@@ -1,0 +1,16 @@
+{
+  "why_us": [
+    {
+      "title": "Automatiza tu tiempo",
+      "content": "Simplifica la programación de reuniones y citas al establecer tus disponibilidades y preferencias de horario, dejando que el sistema coordine y programe automáticamente los encuentros"
+    },
+    {
+      "title": "Comparte tu página de reservas",
+      "content": "Comparte fácilmente tu enlace de reservas para que tus contactos y participantes puedan ver tus disponibilidades en tiempo real y reservar un horario conveniente"
+    },
+    {
+      "title": "Reserva Directamente en tu Calendario",
+      "content": " Integra tu calendario personal y permite que las reservas se reflejen automáticamente, eliminando la necesidad de ingresar eventos manualmente y manteniendo tu agenda siempre actualizada"
+    }
+  ]
+}
